@@ -94,8 +94,9 @@ li {
 
 /* Hero Section */
 .section {
-    text-align: center;
     background-color: #2e2f42;
+    text-align: center;
+    padding: 100px 0;
 }
 
 .section-title {
@@ -104,6 +105,8 @@ li {
     font-size: 56px;
     color: #ffffff;
     letter-spacing: 0.02em;
+    max-width: 600px;
+    margin: 0 auto 30px;
 }
 
 .submit {
@@ -113,42 +116,74 @@ li {
     letter-spacing: 0.04em;
     color: #ffffff;
     cursor: pointer;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
 }
 
 .submit:hover,
 .submit:focus {
     background-color: #404BBF;
 }
-
 /* Advantages Section */
-.container .advantages-title {
+.container {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.advantages-title {
     line-height: 111%;
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.advantages-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.advantages-item {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
 }
 
 .card-heading {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin: 0 0 10px;
 }
 
 .card-description {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    margin: 0;
 }
 
 /* Our Team Section */
 .our-team-section {
     background-color: #F4F4FD;
     text-align: center;
+    padding: 40px 0;
 }
 
 .our-team-container {
-    max-width: 1250px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -158,21 +193,47 @@ li {
     text-align: center;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.our-team-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    list-style: none;
+}
+
+.our-team-card {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
 }
 
 .our-team-img {
-    margin-top: 50px;
+    margin-top: 0;
+    width: 100%;
+    border-radius: 4px;
 }
 
 .our-team-name {
     line-height: 120%;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin: 15px 0 5px;
+    font-size: 18px;
 }
 
 .our-team-text {
     text-align: center;
     color: #434455;
+    margin: 0;
+    font-size: 14px;
+    color: #757575;
 }
 
 .our-team-sm {
@@ -182,17 +243,65 @@ li {
 
 /* Portfolio Section */
 .portfolio {
+    background-color: #F4F4FD;
     text-align: center;
+    padding: 40px 0;
 }
 
 .portfolio-title {
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.portfolio-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio-item {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.card-heading {
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin: 0 0 10px;
+}
+
+.card-description {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    margin: 0;
 }
 
 /* Footer */
 .footer {
     background-color: #2e2f42;
+    padding: 40px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .footer-logo {
@@ -202,6 +311,8 @@ li {
     color: #4d5ae5;
     font-weight: 700;
     text-transform: uppercase;
+    display: block;
+    margin-bottom: 20px;
 }
 
 .footer-span {
@@ -211,8 +322,9 @@ li {
 .footer-text {
     font-family: 'Roboto', sans-serif;
     line-height: 150%;
-    text-align: left;
     color: #F4F4FD;
+    max-width: 400px;
+    margin: 0 auto 30px;
 }
 
 .social-media-title {
@@ -220,5 +332,28 @@ li {
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
-    color: #2e2f42;
+    color: #f4f4fd;
+    margin-bottom: 20px;
+}
+
+.social-media-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.our-team-sm {
+    background-color: #4D5AE5;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.our-team-sm:hover,
+.our-team-sm:focus {
+    background-color: #404BBF;
 }
